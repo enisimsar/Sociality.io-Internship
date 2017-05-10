@@ -1,3 +1,3 @@
 # Sociality.io-Internship
 
-This program show price although item has not price.
+This program show price although item is not in stock.
