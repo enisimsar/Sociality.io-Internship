@@ -9,7 +9,7 @@ def getPrice():
         # Reads html response
         html = response.read() 
         # Regex for price matching html gives prices this pattern (digit...digit(.)digitdigit) -> 12.90
-        price_found = a.search("id=\"offering-price\" content=(\d*.?\d*)", html)
+        price_found = re.search("id=\"offering-price\" content=(\d*.?\d*)", html)
         if price_found:
             print price_found.group(1)
         else:
